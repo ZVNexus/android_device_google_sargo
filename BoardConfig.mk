@@ -116,6 +116,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.sdm670
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_UI_LIB := librecovery_ui_pixel libnos_citadel_for_recovery libnos_for_recovery libbootloader_message libfstab
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20
 TARGET_USERIMAGES_USE_F2FS := true
 
