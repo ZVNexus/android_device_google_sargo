@@ -41,6 +41,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.sdm670:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.sdm670
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    SecureElement
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/google/sargo \
